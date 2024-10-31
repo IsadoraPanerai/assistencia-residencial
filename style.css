@@ -161,8 +161,8 @@ section p {
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Define uma largura fixa para todas as caixas */
-    min-height: 220px; /* Define uma altura mínima para manter o tamanho uniforme */
+    width: 250px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -432,12 +432,14 @@ section {
 
 @media (max-width: 768px) {
     .servicos-container {
-        display: grid; /* Altera para grid */
+        display: grid;
         grid-template-columns: 1fr 1fr; /* Duas colunas */
         gap: 1rem;
+        max-width: 100%; /* Ocupa toda a largura da tela */
+        padding: 0 1rem; /* Adiciona um espaçamento nas laterais para centralizar */
     }
 
     .servico-box {
-        width: 100%; /* Cada caixa ocupa o espaço disponível da coluna */
+        width: 100%; /* Cada caixa ocupa o espaço completo da coluna */
     }
 }
