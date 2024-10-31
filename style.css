@@ -162,7 +162,7 @@ section p {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
-    min-height: 220px;
+    height: 200px; /* Define uma altura fixa para todas as caixas */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -440,6 +440,7 @@ section {
     }
 
     .servico-box {
-        width: 100%; /* Cada caixa ocupa o espaço completo da coluna */
+        width: 100%;
+        height: auto; /* Para garantir que as caixas ocupem toda a largura */
     }
 }
