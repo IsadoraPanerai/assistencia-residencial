@@ -145,9 +145,12 @@ section p {
 
 .servicos-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .servico-box {
@@ -158,6 +161,11 @@ section p {
     text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Define uma largura fixa para todas as caixas */
+    min-height: 220px; /* Define uma altura mínima para manter o tamanho uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .servico-box:hover {
@@ -419,5 +427,17 @@ section {
 
     .whatsapp-float i {
         font-size: 24px; /* Ajustar o tamanho do ícone */
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-container {
+        display: grid; /* Altera para grid */
+        grid-template-columns: 1fr 1fr; /* Duas colunas */
+        gap: 1rem;
+    }
+
+    .servico-box {
+        width: 100%; /* Cada caixa ocupa o espaço disponível da coluna */
     }
 }
