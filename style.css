@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(45deg, #5b7188, #9bb2ce);
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #d3d3d3;
+}
+
+#banner {
+    background: linear-gradient(45deg, #5b7188, #9bb2ce);
+    color: #ffffff;
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#banner h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #5b7188;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    transition: transform 0.2s ease, background-color 0.3s; /* Ajustado de 0.4s para 0.2s */
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #4a5b6a;
+    color: #ffffff;
+    transform: scale(1.1); /* Ajustado para 1.1 para efeito mais sutil */
+}
+
+
+section {
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#regioes-atendimento h2, #sobre h2, #vantagens h2, #servicos-populares h2 {
+    color: #5b7188;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+#regioes-atendimento {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.lista-cidades {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#vantagens ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#vantagens li {
+    background-color: #f3f6f9;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.servico-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico-box:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.servico-box h3 {
+    color: #333;
+}
+
+.servico-box p {
+    color: #666;
+}
+
+footer {
+    background: linear-gradient(45deg, #5b7188, #8da3be);
+    color: #f3f6f9;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.social-link {
+    color: #f3f6f9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #d3d3d3;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a5b6a;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem; /* Adiciona espaço acima dos ícones */
+}
+
+.social-link {
+    background-color: #5b7188;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.social-link:hover {
+    background-color: #4a5b6a;
+    transform: scale(1.1);
+}
+
+#regioes-atendimento {
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+#regioes-atendimento h2 {
+    color: #5b7188;
+    margin-bottom: 1rem;
+}
+
+.regioes-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.regioes-lista li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    color: #333;
+    transition: color 0.3s;
+    justify-content: center;
+}
+
+.regioes-lista li i {
+    color: #5b7188;
+    margin-right: 0.5rem; 
+    font-size: 1.2rem; 
+}
+
+.regioes-lista li:hover {
+    color: #5b7188; 
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5b7188; /* Cor do WhatsApp */
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+    display: flex; /* Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #4a5b6a;
+}
+
+.whatsapp-float i {
+    font-size: 28px;
+}
+
+.whatsapp-float:visited {
+    text-decoration: none;
+}
+
+#contato h2 {
+    color: #5b7188;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.contato-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.contato-section h2 {
+    margin-bottom: 10px;
+}
+
+.contato-section p {
+    margin-bottom: 0;
+}
+
+.btn-contato {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5b7188; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 5px;
+    border: none; 
+    box-shadow: none; 
+}
+
+.btn-contato:focus {
+    outline: none; 
+}
+
+.btn-contato:hover {
+    background-color: #4a5b6a;
+}
+
+h1{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.icone-secao {
+    position: absolute;
+    top: 35px; 
+    left: 30px; 
+    font-size: 1.8rem; 
+    color: #5b7188;
+    z-index: 1;
+}
+section {
+    position: relative;
+    padding: 2rem 2rem;
+    margin: 2rem 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Mudar para linha em telas maiores */
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.8rem; /* Reduzir o tamanho do título em telas menores */
+    }
+
+    section {
+        padding: 2rem 1rem; /* Reduzir padding em telas menores */
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-float i {
+        font-size: 24px; /* Ajustar o tamanho do ícone */
+    }
+}
