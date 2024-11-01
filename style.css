@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f7fa;
+    background-color: #5b7188;
     scroll-behavior: smooth;
 }
 
@@ -73,20 +73,20 @@ nav a:hover {
     color: #5b7188;
     padding: 0.75rem 1.5rem;
     border-radius: 30px;
-    transition: transform 0.2s ease, background-color 0.3s; /* Ajustado de 0.4s para 0.2s */
+    transition: transform 0.2s ease, background-color 0.3s;
     text-decoration: none;
 }
 
 .btn:hover {
     background-color: #4a5b6a;
     color: #ffffff;
-    transform: scale(1.1); /* Ajustado para 1.1 para efeito mais sutil */
+    transform: scale(1.1);
 }
 
 section {
     padding: 3rem 2rem;
     margin: 2rem 0;
-    background-color: #ffffff;
+    background: linear-gradient(40deg, #e7f9ff, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
@@ -108,7 +108,7 @@ section p {
 
 #regioes-atendimento {
     padding: 2rem;
-    background-color: #f9f9f9;
+    background: linear-gradient(40deg, #e7f9ff, #ffffff);
     text-align: center;
     border-top: 1px solid #ddd;
     margin-top: 20px;
@@ -123,23 +123,36 @@ section p {
     gap: 1rem;
 }
 
+#vantagens {
+    text-align: center; /* Centraliza todo o conteúdo da seção */
+    padding: 2rem;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(40deg, #e7f9ff, #ffffff);
+}
+
 #vantagens ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
-    padding: 1rem;
+    justify-content: center; /* Centraliza os itens da lista */
+    padding: 0; /* Remove o padding padrão */
 }
 
 #vantagens li {
-    background-color: #f3f6f9;
-    border: 1px solid #d3d3d3;
-    border-radius: 8px;
-    padding: 1.5rem;
-    max-width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f3f6f9; /* Cor de fundo dos itens */
+    border: 1px solid #d3d3d3; /* Borda dos itens */
+    border-radius: 8px; /* Cantos arredondados nos itens */
+    padding: 1.5rem; /* Espaçamento interno dos itens */
+    max-width: 200px; /* Largura máxima dos itens */
+    text-align: center; /* Centraliza o texto dos itens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve nos itens */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+#vantagens li:hover {
+    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
 }
 
 .servicos-container {
@@ -256,7 +269,7 @@ footer p {
 #regioes-atendimento {
     padding: 3rem 2rem;
     margin: 2rem 0;
-    background-color: #ffffff;
+    background: linear-gradient(40deg, #e7f9ff, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -287,7 +300,6 @@ footer p {
     margin-right: 0.5rem; 
     font-size: 1.2rem; 
 }
-
 
 .whatsapp-float {
     position: fixed;
@@ -333,10 +345,10 @@ footer p {
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem;
-    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
+    border: none;
 }
 
 .contato-section h2 {
@@ -347,26 +359,29 @@ footer p {
     margin-bottom: 0;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .btn-contato {
     display: inline-block;
     padding: 10px 20px;
     background-color: #5b7188; 
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
     font-size: 1.2rem;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 5px;
     border: none; 
     box-shadow: none; 
-}
-
-.btn-contato:focus {
-    outline: none; 
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    transition: transform 0.2s ease, background-color 0.3s;
+    text-decoration: none;
 }
 
 .btn-contato:hover {
     background-color: #4a5b6a;
+    color: #ffffff;
 }
 
 h1{
@@ -378,16 +393,19 @@ h2 {
 }
 
 .icone-secao {
-    font-size: 2rem; /* Tamanho do ícone */
-    color: #5b7188; /* Cor do ícone */
+    font-size: 2rem; 
+    color: #5b7188; 
+    display: flex; 
+    margin-bottom: 1rem; 
 }
 
 section {
     padding: 3rem 2rem;
     margin: 2rem 0;
-    background-color: #ffffff;
+    background: linear-gradient(40deg, #e7f9ff, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    
 }
 
 @media (min-width: 768px) {
