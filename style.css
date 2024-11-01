@@ -83,7 +83,6 @@ nav a:hover {
     transform: scale(1.1); /* Ajustado para 1.1 para efeito mais sutil */
 }
 
-
 section {
     padding: 3rem 2rem;
     margin: 2rem 0;
@@ -289,9 +288,6 @@ footer p {
     font-size: 1.2rem; 
 }
 
-.regioes-lista li:hover {
-    color: #5b7188; 
-}
 
 .whatsapp-float {
     position: fixed;
@@ -330,6 +326,7 @@ footer p {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
 .contato-section {
     display: flex;
     flex-direction: column;
@@ -381,16 +378,12 @@ h2 {
 }
 
 .icone-secao {
-    position: absolute;
-    top: 35px; 
-    left: 30px; 
-    font-size: 1.8rem; 
-    color: #5b7188;
-    z-index: 1;
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #5b7188; /* Cor do ícone */
 }
+
 section {
-    position: relative;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     margin: 2rem 0;
     background-color: #ffffff;
     border-radius: 8px;
@@ -399,7 +392,7 @@ section {
 
 @media (min-width: 768px) {
     nav ul {
-        flex-direction: row; /* Mudar para linha em telas maiores */
+        flex-direction: row;
     }
 
     header h1 {
@@ -413,11 +406,11 @@ section {
 
 @media (max-width: 767px) {
     header h1 {
-        font-size: 1.8rem; /* Reduzir o tamanho do título em telas menores */
+        font-size: 1.8rem; 
     }
 
     section {
-        padding: 2rem 1rem; /* Reduzir padding em telas menores */
+        padding: 2rem 1rem; /
     }
 
     .whatsapp-float {
@@ -433,14 +426,27 @@ section {
 @media (max-width: 768px) {
     .servicos-container {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Duas colunas */
+        grid-template-columns: 1fr 1fr; 
         gap: 1rem;
-        max-width: 100%; /* Ocupa toda a largura da tela */
-        padding: 0 1rem; /* Adiciona um espaçamento nas laterais para centralizar */
+        max-width: 100%;
+        padding: 0 1rem; 
+        align-items: stretch; /* Garante que as caixas tenham a mesma altura */
     }
 
     .servico-box {
         width: 100%;
-        height: auto; /* Para garantir que as caixas ocupem toda a largura */
+        height: auto; 
+        min-height: 200px; /* Ajuste conforme necessário para garantir altura mínima */
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Altera a direção para coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+    
+    .icone-secao {
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do ícone */
     }
 }
